@@ -426,7 +426,7 @@ elseif(NOT EPROSIMA_INSTALLER)
         COMPONENT libraries${MSVCARCH_EXTENSION}
         )
 
-    export(TARGETS ${PROJECT_NAME} FILE ${PROJECT_BINARY_DIR}/cmake/config/${PROJECT_NAME}-targets.cmake)
+    export(TARGETS ${PROJECT_NAME} foonathan_memory FILE ${PROJECT_BINARY_DIR}/cmake/config/${PROJECT_NAME}-targets.cmake)
 
     if(INSTALLER_PLATFORM)
         set(INSTALL_DESTINATION_PATH ${DATA_INSTALL_DIR}/${PROJECT_NAME}-${INSTALLER_PLATFORM}/cmake)
